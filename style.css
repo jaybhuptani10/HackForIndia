@@ -1,0 +1,246 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+    }
+html,body{
+    height: 100%;
+    background-color: #111;
+    width: 100%;
+}
+nav{
+    color: white;
+    height: 20vh;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav h2{
+    margin: 0px 7vw;
+    font-size: 4.2vw;
+    font-weight: 800;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+nav .nav-items{
+    display: flex;
+    margin-right: 20px;
+    
+}
+nav .nav-items ul{
+    display: flex;
+    gap: 5vw;
+}
+nav .nav-items ul li{
+    list-style: none;
+}
+nav .nav-items ul li a{
+    text-decoration: none;
+    color: rgb(156, 152, 145);
+    font-size: 1.1vw;
+    font-weight: 500;
+    font-family: 'Young Serif', serif;
+}
+
+.page-1{
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(https://images.unsplash.com/photo-1525921429624-479b6a26d84d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80);
+    background-position: top;
+    background-size: cover;
+}
+
+.page-1 .header{
+   padding-top: 10vw;
+   
+    position: relative;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    
+}
+.page-1 .header::-webkit-scrollbar{
+    display: none;
+}
+.page-1 .header .scroll h2{
+    color: rgb(24, 23, 23);
+    font-size: 3.7vw;
+    font-weight: 200;
+    font-family: fantasy;
+    text-align: right;
+
+}
+.scroll{
+    width: 140%;
+    
+    display: inline-block;
+    animation: scroll;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    cursor: default;
+}
+@keyframes scroll{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+.about-us{
+    height: 36vw;
+    width: 100%;
+    display: flex;
+    padding: 20px;
+
+    color: white;
+    
+}
+.about-us-in{
+    padding: 10px;
+}
+.about-us-in h3{
+    text-align: center;
+    font-size: 5vw;
+    font-weight: 700
+}
+.about-us-in p{
+    font-size: 1.3vw;
+    text-align: center;
+}
+.about-us img{
+    width: 35vw;
+    height: 35vw;
+    border-radius: 20px;
+    
+}
+.cards-container{
+    
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    z-index: 10;
+    position: relative;
+}
+.card{
+    z-index: 10;
+    height: 30vw;
+    width: 27vw;
+    
+    border-radius: 20px;
+    background-size: cover;
+    
+    background-position: center;
+    overflow: hidden;
+    transition: all ease 0.6s;
+}
+#card1{
+    background-image: url("lab.jpeg");
+}
+#card2{
+    background-image: url("events.jpeg");
+}
+#card3{
+    background-image: url("notes.jpeg");
+}
+.overlay{
+    height: 100%;
+    width: 100%;
+    background-color: #95C11E;
+    padding-top: 160px;
+    padding: 30px;
+    opacity: 0;
+    transition: all ease 0.6s;
+    
+
+}
+.overlay h4{
+    color: black;
+    font-size: 4vw;
+    font-weight: 800;
+    text-transform: uppercase;
+    white-space: nowrap;
+    margin-bottom: 20px;
+
+}
+.overlay p{
+    color: black;
+    font-size: 1.7vw;
+    font-weight: 400;
+}
+.card:hover .overlay{
+    opacity: 1;
+}
+.card:hover{
+    transform: rotate3d(-1,1,0,20deg);
+    
+}
+
+.div{
+    height: 10vh;
+}
+
+
+
+
+@media only screen and (max-width: 600px){
+    nav{
+        flex-direction: column;
+        height: 13vh;
+        padding: 8px 0;
+    }
+    nav h2{
+        margin: 0;
+        font-size: 6.8vw;
+    }
+    nav .nav-items{
+        
+        margin-right: 0px;
+        
+    }
+    nav .nav-items ul li a{
+        
+        font-size: 2.3vw;
+    }
+    .page-1{
+        min-height: 50vh;
+    }
+    .about-us{
+        height: 40vh;
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-us img{
+        width: 50vw;
+        height: 90vw;
+    }
+    .about-us-in p{
+        font-size: 3vw;
+    }
+    .about-us h3{
+        font-size: 8vw;
+    }
+    .cards-container{
+        min-height: 100%;
+        
+        margin-top: 120%;
+        flex-direction: column;
+        
+    }
+    .card{
+        height: 70vw;
+        width: 60vw;
+    }
+    .overlay h4{
+        font-size: 6vw
+    }
+    .overlay p{
+        font-size: 2.5vw;
+    }
+  
+}
