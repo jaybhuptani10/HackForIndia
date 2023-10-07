@@ -8,38 +8,82 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mooli&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fuggles&family=Mooli&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fuggles&family=Montserrat:ital,wght@1,300&      family=Mooli&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav>
-        <h2>NotesPedia</h2>
-        <div class="nav-items">
-            <ul>
-                <li><a href="">HOME</a></li>
-                <li><a href="">NOTES</a></li>
-                <li><a href="">EVENTS</a></li>
-                <li><a href="">ABOUT-US</a></li>
-                <li><a href="">CONTACT</a></li>
-                <li><a href="">PROFILE</a></li>
-            </ul>
-        </div>
-    </nav>  
-    <main>
+    <div class="try">
+        <nav>
+            <h2><img src="IMG-20231007-WA0001_adobe_express.png" alt=""></h2>
+            <div class="nav-items">
+                <ul class="main-ul">
+                    <li><a href="index.html">HOME</a></li>
+                    <li id="Menu" ><a id="Notes" href="">NOTES</a>
+                    <ul id="drop-items"><li><a href="firstyear.html">First-Year</a></li>
+                    <li><a href="secondyear.html">Second-Year</a></li></ul>
+                
+                    <li><a href="">DOUBTS</a></li>
+                    <li><a href="profile.html">ABOUT-US</a></li>
+                    <li><a href="">CONTACT</a></li>
+                    <i class="fa-solid fa-user">
+                        <ul id="drop-item">
+                            <li><a href="">Information</a></li>
+                            <li><a id="logout">LogOut</a></li>
+    
+                        </ul>
+                    </i>
+                    
+                    
+                </ul>
+                
+
+            </div>
+            
+        </nav>  
+        <!-- <form>
+            <input type="text" name="text" id="search" placeholder="Search...">
+            <input type="submit" id="submit" value="Submit" onClick="search">
+        </form> -->
         <div class="page-1">
             <div class="header">
                 <div class="scroll">
                     <h2>WELCOME TO NOTESPEDIA</h2>
-                  
+                    
                 </div>
                 
             </div>
+            <div class="para">
+                <p>"Notespedia: Your ultimate study companion.!"</p>
+            </div>
+          
+            
         </div>
+       
+    </div>
+    
+    <main>
+        
         <div class="about-us">
+            
             <img src="usci1.jpg" alt="photo 1">
+            <img id="ping" class="pings" src="pingg.png" alt="">
             <div class="about-us-in">
                 <h3>ABOUT US</h3>
                 <p>"Simplifying learning. Browse and download concise notes for various subjects. Enhance your studies effortlessly. Your academic success partner."</p>
             </div>
             <img src="usci4.jpg" alt="photo 2">
+            <img id="ping-2" class="pings" src="pingg.png" alt="">
 
         </div>
         <div class="cards-container">
@@ -65,9 +109,60 @@
         </div>
         <div class="div"></div>
         
-       
-       
-    </main>
-    
-</body>
-</html>
+  <!-- Include your other scripts here -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<!-- Include your other JavaScript libraries and scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.7.0/jquery.lettering.min.js" integrity="sha512-9ex1Kp3S7uKHVZmQ44o5qPV6PnP8/kYp8IpUHLDJ+GZ/qpKAqGgEEH7rhYlM4pTOSs/WyHtPubN2UePKTnTSww==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/textillate/0.4.0/jquery.textillate.min.js" integrity="sha512-0bHMhYsdpiur1bT84kDH4D7cpxFQ9O7uA5yxVAqWC87h552Xt0swX4M+ZlXMKE8oPVRIJ5lAwXWO2UWeDwJJOw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-analytics.js";
+    import { getAuth, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-auth.js";
+
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+        apiKey: "AIzaSyAprycaIsv6jb6n110awcbc8FdLL0cqb30",
+        authDomain: "auth-e933e.firebaseapp.com",
+        databaseURL: "https://auth-e933e-default-rtdb.firebaseio.com",
+        projectId: "auth-e933e",
+        storageBucket: "auth-e933e.appspot.com",
+        messagingSenderId: "1060459906886",
+        appId: "1:1060459906886:web:3a7ffacfc9b94c5f9cc747",
+        measurementId: "G-16M622CYBN"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+
+    // Your Firebase Auth instance
+    const auth = getAuth();
+
+    // Check if the user is authenticated
+    auth.onAuthStateChanged( (user) => {
+        if (!user) {
+            window.location.href = "auth.html";
+        }
+    });
+
+    const logout = document.querySelector('#logout');
+    logout.addEventListener('click',(e)=>{
+        e.preventDefault();
+        auth.signOut().then(()=>{
+            alert("You are signed out")
+            window.location.href="auth.html";
+        })
+    })
+</script>
+
+        
+        
+
+        
+        <script src="script.js"></script>
+    </body>
+    </html>
